@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href=
+    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    
+    <link rel="stylesheet" href="styleV2.css">
+
+</head>
+<body>
+ <div class="main">
+<form name="myForm">
+<input type="text" name="textview" class="textview" disabled>
+</form>
+<hr>
+<table class="face">
+<tr>
+    <td> <input type="button" class="button grey symbol" value="AC" onclick="clean()"></td>
+    <td> <input type="button" class="button grey symbol" value="( )" onclick="insertBrac()" ></td>
+    <td> <input type="button" class="button grey symbol" value="⌫" onclick="back()"></td> 
+     <td> <input type="button" class="button blue symbol" value="%" onclick="insertPerc()"></td>
+         
+</tr>
+<tr>
+    <td> <input type="button" class="button grey symbol" value="√" onclick="SR('r')" id="r" disabled></td>
+    <td> <input type="button" class="button grey symbol" value="x²" onclick="SR('s')" id="s" disabled></td>
+    <td> <input type="button" class="button grey symbol" value="x³" onclick="SR('t')" id="t" disabled></td>
+     <td> <input type="button" class="button blue symbol" value=" ÷" onclick="insertOp('/')"></td>
+         
+</tr>
+
+<tr>
+    <td> <input type="button" class="button grey number" value="7" onclick="insertNum(7)"></td>
+    <td> <input type="button" class="button grey number" value="8" onclick="insertNum(8)"></td>
+     <td> <input type="button" class="button grey number" value="9" onclick="insertNum(9)"></td> 
+     <td> <input type="button" class="button blue symbol" value="X" onclick="insertOp('*')"></td>
+</tr>
+<tr>
+    <td> <input type="button" class="button grey number" value="4" onclick="insertNum(4)"></td>
+    <td> <input type="button" class="button grey number" value="5" onclick="insertNum(5)"></td>
+     <td> <input type="button" class="button grey number" value="6" onclick="insertNum(6)"></td> 
+     <td> <input type="button" class="button blue symbol" value="-" onclick="insertOp('-')"></td>
+</tr>
+<tr>
+    <td> <input type="button" class="button grey number" value="1" onclick="insertNum(1)"></td>
+    <td> <input type="button" class="button grey number" value="2" onclick="insertNum(2)"></td>
+     <td> <input type="button" class="button grey number" value="3" onclick="insertNum(3)"></td> 
+     <td> <input type="button" class="button blue symbol" value="+" onclick="insertOp('+')"></td>
+</tr>
+<tr>
+    <td> <input type="button" class="button grey number" value="00"  onclick="insertNum('00')"></td>
+    <td> <input type="button" class="button grey number" value="0"  onclick="insertNum(0)"></td>
+     <td> <input type="button" class="button grey symbol" value="." onclick="insertDec()"></td> 
+     <td> <input type="button" class="button blue symbol" value="=" onclick="EqualTo()"></td>
+</tr>
+</table>
+
+ </div> 
+ 
+ 
+<script type="text/javascript" src="CalculatorV2.js">
+
+</script>
+</body>
+</html>
